@@ -181,7 +181,7 @@ class OrderSslOrderDomainValidationMethods implements ModelInterface, ArrayAcces
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['host_name'] = isset($data['host_name']) ? $data['host_name'] : null;
         $this->container['method'] = isset($data['method']) ? $data['method'] : null;

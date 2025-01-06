@@ -176,7 +176,7 @@ class DomainWhoisPrivacyData implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['expiration_date'] = isset($data['expiration_date']) ? $data['expiration_date'] : null;
     }

@@ -181,7 +181,7 @@ class SpamExpertGenerateLoginURLRequest implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['bundle'] = isset($data['bundle']) ? $data['bundle'] : null;
         $this->container['domain_or_email'] = isset($data['domain_or_email']) ? $data['domain_or_email'] : null;

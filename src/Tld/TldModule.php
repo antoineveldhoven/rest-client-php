@@ -22,9 +22,9 @@ class TldModule
      * @param int             $host_index (Optional) host index to select the list of hosts if defined in the OpenAPI spec
      */
     public function __construct(
-        ClientInterface $client = null,
-        Configuration $config = null,
-        HeaderSelector $selector = null,
+        ?ClientInterface $client = null,
+        ?Configuration $config = null,
+        ?HeaderSelector $selector = null,
         $host_index = 0
     ) {
         $this->TldServiceApi = new TldServiceApi($client, $config, $selector, $host_index);

@@ -181,7 +181,7 @@ class ZoneRecordWithOriginal implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['original_record'] = isset($data['original_record']) ? $data['original_record'] : null;
         $this->container['record'] = isset($data['record']) ? $data['record'] : null;

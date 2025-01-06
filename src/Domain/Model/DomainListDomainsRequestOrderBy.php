@@ -216,7 +216,7 @@ class DomainListDomainsRequestOrderBy implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['active_date'] = isset($data['active_date']) ? $data['active_date'] : null;
         $this->container['domain_extension'] = isset($data['domain_extension']) ? $data['domain_extension'] : null;

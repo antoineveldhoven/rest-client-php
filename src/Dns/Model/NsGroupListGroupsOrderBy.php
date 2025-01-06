@@ -186,7 +186,7 @@ class NsGroupListGroupsOrderBy implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['domain_count'] = isset($data['domain_count']) ? $data['domain_count'] : null;
         $this->container['ns_count'] = isset($data['ns_count']) ? $data['ns_count'] : null;

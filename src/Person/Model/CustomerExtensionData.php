@@ -356,7 +356,7 @@ class CustomerExtensionData implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['admin_type'] = isset($data['admin_type']) ? $data['admin_type'] : null;
         $this->container['applicant_purpose'] = isset($data['applicant_purpose']) ? $data['applicant_purpose'] : null;

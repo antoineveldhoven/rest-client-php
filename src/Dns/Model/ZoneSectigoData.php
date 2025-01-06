@@ -196,7 +196,7 @@ class ZoneSectigoData implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['autorenew'] = isset($data['autorenew']) ? $data['autorenew'] : null;
         $this->container['order_date'] = isset($data['order_date']) ? $data['order_date'] : null;

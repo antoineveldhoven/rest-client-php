@@ -356,7 +356,7 @@ class SettingsPaymentMethodLimit implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['aud'] = isset($data['aud']) ? $data['aud'] : null;
         $this->container['bgn'] = isset($data['bgn']) ? $data['bgn'] : null;

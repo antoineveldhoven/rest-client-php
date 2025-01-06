@@ -346,7 +346,7 @@ class TldTld implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['admin_handle_supported'] = isset($data['admin_handle_supported']) ? $data['admin_handle_supported'] : null;
         $this->container['billing_handle_enabled'] = isset($data['billing_handle_enabled']) ? $data['billing_handle_enabled'] : null;

@@ -216,7 +216,7 @@ class PaymentListPaymentsResponseDataResults implements ModelInterface, ArrayAcc
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['amount'] = isset($data['amount']) ? $data['amount'] : null;
         $this->container['confirmation_date'] = isset($data['confirmation_date']) ? $data['confirmation_date'] : null;

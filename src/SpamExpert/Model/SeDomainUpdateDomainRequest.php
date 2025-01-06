@@ -196,7 +196,7 @@ class SeDomainUpdateDomainRequest implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['aliases'] = isset($data['aliases']) ? $data['aliases'] : null;
         $this->container['bundle'] = isset($data['bundle']) ? $data['bundle'] : null;

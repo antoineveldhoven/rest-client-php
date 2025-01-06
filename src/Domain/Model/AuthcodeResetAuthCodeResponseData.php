@@ -206,7 +206,7 @@ class AuthcodeResetAuthCodeResponseData implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['auth_code'] = isset($data['auth_code']) ? $data['auth_code'] : null;
         $this->container['auth_info'] = isset($data['auth_info']) ? $data['auth_info'] : null;

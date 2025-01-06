@@ -186,7 +186,7 @@ class ResellerResellerAdditionalData implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['cif_nif_number'] = isset($data['cif_nif_number']) ? $data['cif_nif_number'] : null;
         $this->container['gstin'] = isset($data['gstin']) ? $data['gstin'] : null;

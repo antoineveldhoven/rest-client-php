@@ -201,7 +201,7 @@ class PriceGetPriceResponseData implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['is_premium'] = isset($data['is_premium']) ? $data['is_premium'] : null;
         $this->container['is_promotion'] = isset($data['is_promotion']) ? $data['is_promotion'] : null;

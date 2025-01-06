@@ -181,7 +181,7 @@ class ProductSslProductWarranty implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['product'] = isset($data['product']) ? $data['product'] : null;
         $this->container['reseller'] = isset($data['reseller']) ? $data['reseller'] : null;

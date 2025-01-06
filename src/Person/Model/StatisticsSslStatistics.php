@@ -181,7 +181,7 @@ class StatisticsSslStatistics implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['by_status'] = isset($data['by_status']) ? $data['by_status'] : null;
         $this->container['total'] = isset($data['total']) ? $data['total'] : null;

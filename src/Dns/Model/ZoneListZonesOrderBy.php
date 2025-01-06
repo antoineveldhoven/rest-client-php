@@ -186,7 +186,7 @@ class ZoneListZonesOrderBy implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['creation_date'] = isset($data['creation_date']) ? $data['creation_date'] : 'desc';
         $this->container['modification_date'] = isset($data['modification_date']) ? $data['modification_date'] : null;

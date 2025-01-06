@@ -196,7 +196,7 @@ class DomainApiHistory implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['cmd'] = isset($data['cmd']) ? $data['cmd'] : null;
         $this->container['created_at'] = isset($data['created_at']) ? $data['created_at'] : null;

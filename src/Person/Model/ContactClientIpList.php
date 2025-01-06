@@ -181,7 +181,7 @@ class ContactClientIpList implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['allow'] = isset($data['allow']) ? $data['allow'] : null;
         $this->container['deny'] = isset($data['deny']) ? $data['deny'] : null;

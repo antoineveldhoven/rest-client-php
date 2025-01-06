@@ -191,7 +191,7 @@ class ProductSslProductPrices implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['extra_domain_price'] = isset($data['extra_domain_price']) ? $data['extra_domain_price'] : null;
         $this->container['extra_wildcard_domain_price'] = isset($data['extra_wildcard_domain_price']) ? $data['extra_wildcard_domain_price'] : null;

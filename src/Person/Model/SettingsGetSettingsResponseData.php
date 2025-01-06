@@ -376,7 +376,7 @@ class SettingsGetSettingsResponseData implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['av_handle'] = isset($data['av_handle']) ? $data['av_handle'] : null;
         $this->container['claims_confirm_url'] = isset($data['claims_confirm_url']) ? $data['claims_confirm_url'] : null;

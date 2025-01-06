@@ -191,7 +191,7 @@ class HistoryZoneHistory implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['date'] = isset($data['date']) ? $data['date'] : null;
         $this->container['is'] = isset($data['is']) ? $data['is'] : null;

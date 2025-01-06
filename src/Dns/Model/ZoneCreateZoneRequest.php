@@ -211,7 +211,7 @@ class ZoneCreateZoneRequest implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['domain'] = isset($data['domain']) ? $data['domain'] : null;
         $this->container['is_spamexperts_enabled'] = isset($data['is_spamexperts_enabled']) ? $data['is_spamexperts_enabled'] : null;

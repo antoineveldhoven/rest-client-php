@@ -241,7 +241,7 @@ class OrderSslOrderAdditionalData implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['dns'] = isset($data['dns']) ? $data['dns'] : null;
         $this->container['dns_record'] = isset($data['dns_record']) ? $data['dns_record'] : null;

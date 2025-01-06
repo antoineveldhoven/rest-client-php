@@ -181,7 +181,7 @@ class NsGroupCreateGroupRequest implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['name_servers'] = isset($data['name_servers']) ? $data['name_servers'] : null;
         $this->container['ns_group'] = isset($data['ns_group']) ? $data['ns_group'] : null;

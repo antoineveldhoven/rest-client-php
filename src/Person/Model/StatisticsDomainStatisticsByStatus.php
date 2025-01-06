@@ -201,7 +201,7 @@ class StatisticsDomainStatisticsByStatus implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['act'] = isset($data['act']) ? $data['act'] : null;
         $this->container['fai'] = isset($data['fai']) ? $data['fai'] : null;

@@ -186,7 +186,7 @@ class TldPriceWithPromoInfo implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['product'] = isset($data['product']) ? $data['product'] : null;
         $this->container['promotion_details'] = isset($data['promotion_details']) ? $data['promotion_details'] : null;

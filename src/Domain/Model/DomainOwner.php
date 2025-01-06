@@ -181,7 +181,7 @@ class DomainOwner implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['company_name'] = isset($data['company_name']) ? $data['company_name'] : null;
         $this->container['full_name'] = isset($data['full_name']) ? $data['full_name'] : null;

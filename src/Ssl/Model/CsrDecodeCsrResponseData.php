@@ -196,7 +196,7 @@ class CsrDecodeCsrResponseData implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['domain_names_count'] = isset($data['domain_names_count']) ? $data['domain_names_count'] : null;
         $this->container['public_key'] = isset($data['public_key']) ? $data['public_key'] : null;

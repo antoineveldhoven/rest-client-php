@@ -216,7 +216,7 @@ class OrderReissueOrderRequest implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['approver_email'] = isset($data['approver_email']) ? $data['approver_email'] : null;
         $this->container['csr'] = isset($data['csr']) ? $data['csr'] : null;

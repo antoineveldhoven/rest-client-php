@@ -191,7 +191,7 @@ class OrderSslOrderDomainValidationStatuses implements ModelInterface, ArrayAcce
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['ca_operation'] = isset($data['ca_operation']) ? $data['ca_operation'] : null;
         $this->container['ca_order_status'] = isset($data['ca_order_status']) ? $data['ca_order_status'] : null;

@@ -191,7 +191,7 @@ class SettingsTacContract implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['is_signed'] = isset($data['is_signed']) ? $data['is_signed'] : null;
         $this->container['name'] = isset($data['name']) ? $data['name'] : null;

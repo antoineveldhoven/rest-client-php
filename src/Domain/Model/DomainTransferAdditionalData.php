@@ -271,7 +271,7 @@ class DomainTransferAdditionalData implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['admin_sing_pass_id'] = isset($data['admin_sing_pass_id']) ? $data['admin_sing_pass_id'] : null;
         $this->container['auth_code'] = isset($data['auth_code']) ? $data['auth_code'] : null;

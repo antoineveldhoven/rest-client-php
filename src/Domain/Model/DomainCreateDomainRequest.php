@@ -311,7 +311,7 @@ class DomainCreateDomainRequest implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['accept_eap_fee'] = isset($data['accept_eap_fee']) ? $data['accept_eap_fee'] : null;
         $this->container['accept_premium_fee'] = isset($data['accept_premium_fee']) ? $data['accept_premium_fee'] : null;

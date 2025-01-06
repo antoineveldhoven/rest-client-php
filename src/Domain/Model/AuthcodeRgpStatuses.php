@@ -181,7 +181,7 @@ class AuthcodeRgpStatuses implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['add_period'] = isset($data['add_period']) ? $data['add_period'] : null;
         $this->container['auto_renew_period'] = isset($data['auto_renew_period']) ? $data['auto_renew_period'] : null;

@@ -186,7 +186,7 @@ class PromoMessagePromoMessage implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['html'] = isset($data['html']) ? $data['html'] : null;
         $this->container['plain_text'] = isset($data['plain_text']) ? $data['plain_text'] : null;

@@ -226,7 +226,7 @@ class CsrCreateCsrRequest implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['bits'] = isset($data['bits']) ? $data['bits'] : null;
         $this->container['common_name'] = isset($data['common_name']) ? $data['common_name'] : null;

@@ -251,7 +251,7 @@ class LicenselicenseLicense implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['activation_code'] = isset($data['activation_code']) ? $data['activation_code'] : null;
         $this->container['billing_type'] = isset($data['billing_type']) ? $data['billing_type'] : null;

@@ -231,7 +231,7 @@ class TldPrices implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['create_price'] = isset($data['create_price']) ? $data['create_price'] : null;
         $this->container['domicile_price'] = isset($data['domicile_price']) ? $data['domicile_price'] : null;

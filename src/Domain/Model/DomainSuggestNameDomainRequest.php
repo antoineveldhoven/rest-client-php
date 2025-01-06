@@ -201,7 +201,7 @@ class DomainSuggestNameDomainRequest implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['language'] = isset($data['language']) ? $data['language'] : null;
         $this->container['limit'] = isset($data['limit']) ? $data['limit'] : null;

@@ -196,7 +196,7 @@ class DomainApproveTransferRequest implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['approve'] = isset($data['approve']) ? $data['approve'] : null;
         $this->container['auth_code'] = isset($data['auth_code']) ? $data['auth_code'] : null;

@@ -30,5 +30,8 @@
         "ext-json": "*",
         "ext-mbstring": "*",
         "guzzlehttp/guzzle": "^7.4"
+    },
+    "require-dev": {
+        "rector/rector": "^2.0"
     }
 }

@@ -206,7 +206,7 @@ class DomainCreateDomainResponseData implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['activation_date'] = isset($data['activation_date']) ? $data['activation_date'] : null;
         $this->container['additional_data'] = isset($data['additional_data']) ? $data['additional_data'] : null;
